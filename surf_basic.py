@@ -11,4 +11,5 @@ kp, des = surf.detectAndCompute(img, None)
 
 img_surf = cv2.drawKeypoints(img, kp, None, (255,0,0), 4)
 
-cv2.imwrite('new_image.jpg', img_surf)
+cv2.imshow('Image Features', img_surf)
+cv2.waitKey()
