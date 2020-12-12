@@ -3,9 +3,9 @@
 import cv2
 import matplotlib as plt
 
-img = cv2.imread("stop_sign.png", 0)
-surf = cv2.xfeatures2d.SURF_create(5000)
-surf.setUpright(True)
+img = cv2.imread("stop_sign_testing/stop_sign_template.jpg", 0)
+surf = cv2.xfeatures2d.SURF_create(1000)
+# surf.setUpright(True)
 
 kp, des = surf.detectAndCompute(img, None)
 
